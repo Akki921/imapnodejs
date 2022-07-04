@@ -17,7 +17,7 @@ oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
 exports.getUser = async (req, res) => {
   try {
-    const url = `https://gmail.googleapis.com/gmail/v1/users/${process.env.USER}/profile`;
+    const url = `https://gmail.googleapis.com/gmail/v1/users/funds2000@gmail.com/profile`;
     var config = {
       method: "get",
       url: url,
@@ -35,7 +35,7 @@ exports.getUser = async (req, res) => {
 
 exports.getDrafts = async (req, res) => {
   try {
-    const url = `https://gmail.googleapis.com/gmail/v1/users/${process.env.USER}/drafts`;
+    const url = `https://gmail.googleapis.com/gmail/v1/users/funds2000@gmail.com/drafts`;
     var config = {
       method: "get",
       url: url,
@@ -53,8 +53,12 @@ exports.getDrafts = async (req, res) => {
 
 exports.readMail = async (req, res) => {
   try {
+<<<<<<< HEAD
     let = [];
     const url = `https://gmail.googleapis.com//gmail/v1/users/${process.env.USER}/messages`;
+=======
+    const url = `https://gmail.googleapis.com//gmail/v1/users/funds2000@gmail.com/messages/17f21cfc30b20eec`;
+>>>>>>> 060787fa188ca28790c6d221630b8f77d3b298a6
     var config = {
       method: "get",
       url: url,
